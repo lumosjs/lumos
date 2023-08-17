@@ -1,1 +1,95 @@
-# lumosjs
+[![Lumosjs Logo](
+https://avatars.githubusercontent.com/u/141889927?s=400&u=7ad81f0c3c875eed69386759ea2f1e11f285e9e6&v=4)](https://lumosjs.vercel.com/)
+
+Fast, minimalist web framework for [Node.js](http://nodejs.org).
+
+  [![NPM Version][npm-version-image]][npm-url]
+  [![NPM Install Size][npm-install-size-image]][npm-install-size-url]
+  [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
+
+  ```js
+export default function webRoutes(app) {
+
+   app.get("/",function(req,res)=>{
+        res.send("Hello world");
+    });
+
+}
+```
+
+## Installation
+
+This is a [Node.js](https://nodejs.org/en/) module available through the
+[npm registry](https://www.npmjs.com/).
+
+Before installing, [download and install Node.js](https://nodejs.org/en/download/).
+Node.js 0.10 or higher is required.
+
+Installation is done using the
+
+```console
+$ npm install -g lumos-cli
+```
+
+Follow [our installing guide](https://lumosjs.vercel.com/installing.html)
+for more information.
+
+## Features
+
+* __Data Validation__ : Perform input validation in controllers using specified fields and messages.
+* __Routing__ : Easily create routes using controllers, defining APIs and routes for views.
+* __Controllers and Services__ : Separate data handling and business logic, facilitating maintenance and scalability.
+* __Middlewares__ : Apply intermediate logic to routes with custom middlewares.
+* __Data Models__ : Model your data structure using models defined in the 'model' directory.
+* __View Rendering__ : Utilize the template engine with EJS to render views.
+* __Production Error Logs__ : Have detailed logs to ease debugging in production.
+* __File Upload__ : Support for individual and multiple file uploads.
+* __Authentication and Authorization__ : Implement authentication and authorization using middlewares and sessions for securely managing user state.
+* __CORS Handling__ : Control which domains can access your API.
+* __Rate Limiting__ : Safeguard your server against DDoS attacks with rate limiting.
+
+## Docs & Community
+
+  * [GitHub Organization](https://github.com/lumosjs) for Official Middleware & Modules
+  * https://github.com/lumosjs/lumos/wiki
+  * [Google Group](https://groups.google.com/g/lumosjs) for discussion
+
+ ## Philosophy
+
+  The Lumosjs philosophy is to provide small, robust tooling for HTTP servers, making
+  it a great solution for single page applications, websites, hybrids, or public
+  HTTP APIs.
+
+  Lumosjs does not force you to use any specific ORM.
+  you can quickly craft your perfect framework.
+
+  
+## Example
+
+* coming soon..
+
+
+### Running Tests
+
+To run the test suite, first install the dependencies, then run `npm test`:
+
+```console
+$ npm install mocha
+$ npm test
+```
+
+
+## People
+
+The original author of Lumosjs is [Vicente Sombo](https://github.com/sombo20)
+
+## License
+
+  [MIT](LICENSE)
+
+[npm-downloads-image]: https://badgen.net/npm/dm/lumos-cli
+[npm-downloads-url]: https://npmcharts.com/compare/lumos-cli?minimal=true
+[npm-install-size-image]: https://badgen.net/packagephobia/install/lumos-cli
+[npm-install-size-url]: https://packagephobia.com/result?p=lumos-cli
+[npm-url]: https://npmjs.org/package/lumos-cli
+[npm-version-image]: https://badgen.net/npm/v/lumos-cli
