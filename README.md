@@ -65,8 +65,21 @@ for more information.
 
   
 ## Example
+  ```js
+  //simple upload file
 
-* coming soon..
+  import  upload   from "#utils/uploadFile"
+  
+  export default function apiRoutes(app){
+  /*
+    upload(folder,fileName).type(extensionRequired).single() or use mult to more files.
+  */
+
+  app.post("/upload",async (req,res)=>{
+		const singleFileUpload = await upload("user/file", req.body.files.file).type('png',"mp3","pdf").single();
+	 });
+  }
+  ```
 
 
 ### Running Tests
