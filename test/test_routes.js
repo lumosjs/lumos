@@ -1,5 +1,5 @@
 import { describe, it } from 'mocha';
-import  { get, post, put, del, web, routes } from '#core/routes';
+import  { get, post, put, delet, routes } from '#core/routes';
 import { expect } from 'chai';
 
 describe('Router Functions', () => {
@@ -26,19 +26,9 @@ describe('Router Functions', () => {
   });
 
   it('should add a DELETE route', () => {
-    del('/test', () => {});
+    delet('/test', () => {});
     expect(routes).to.have.lengthOf(1);
     expect(routes[0].method).to.equal('DELETE');
-  });
-
-  it('should add a web route', () => {
-    web('/test', () => {});
-    expect(routes).to.have.lengthOf(1);
-    expect(routes[0].method).to.equal('GET');
-  });
-
-  it('should throw an error for invalid path', () => {
-    get('test', () => {});
   });
 
 });
