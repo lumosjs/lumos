@@ -8,7 +8,9 @@ Fast, minimalist web framework for [Node.js](http://nodejs.org).
   [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
 
   ```js
-export default function webRoutes(app) {
+export default function apiRoutes(app) {
+
+    //global prefix is /api/*
 
    app.get("/",function(req,res)=>{
         res.send("Hello world");
@@ -41,7 +43,6 @@ for more information.
 * __Controllers and Services__ : Separate data handling and business logic, facilitating maintenance and scalability.
 * __Middlewares__ : Apply intermediate logic to routes with custom middlewares.
 * __Data Models__ : Model your data structure using models defined in the 'model' directory.
-* __View Rendering__ : Utilize the template engine with EJS to render views.
 * __Production Error Logs__ : Have detailed logs to ease debugging in production.
 * __File Upload__ : Support for individual and multiple file uploads.
 * __Authentication and Authorization__ : Implement authentication and authorization using middlewares and sessions for securely managing user state.
