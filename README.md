@@ -97,7 +97,8 @@ $ npm test
 
 The Lumosjs project welcomes all constructive contributions. Contributions take many forms,
 from code for bug fixes and enhancements, to additions and fixes to documentation, additional
-tests, triaging incoming pull requests and issues, and more!
+tests, triaging incoming pull requests and issues, and more, 
+I will soon add typescript to the project, for now I will improve and add some new features!
 
 See the [Contributing Guide](CONTRIBUTING_EN.md) for more technical details on contributing.
 
